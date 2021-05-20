@@ -9,7 +9,7 @@
 
 iot_sk_update_gwid() {
     # get gateway ID from its MAC address to generate an EUI-64 address
-    GATEWAY_EUI_NIC="eth0"
+    GATEWAY_EUI_NIC="wlp2s0"
     if [[ `grep "$GATEWAY_EUI_NIC" /proc/net/dev` == "" ]]; then
         GATEWAY_EUI_NIC="wlan0"
     fi
